@@ -18,5 +18,5 @@ Contents
 
 .. toctree::
 
-   What does Mjolnir mean?
+   usage
    Starting out on Mjolnir – VPN access required
