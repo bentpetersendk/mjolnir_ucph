@@ -14,13 +14,7 @@ how to :ref:`installation` the project.
    This documentation is under active development.
 
 Contents
---------
-
-.. toctree::
-
-   usage
-   Starting out on Mjolnir – VPN access required
-   
+--------   
 .. toctree::
 
    usage
