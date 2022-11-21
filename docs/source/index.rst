@@ -1,3 +1,5 @@
+.. include:: ../README.rst
+
 Welcome to Lumache's documentation!
 ===================================
 
@@ -11,10 +13,13 @@ how to :ref:`installation` the project.
 
 .. note::
 
-   This documentation is under active development.
+   This project is under active development.
 
 Contents
---------   
+--------
+
 .. toctree::
+
+   Home <self>
    usage
    api
