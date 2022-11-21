@@ -1,7 +1,10 @@
 .. include:: ../README.rst
 
-Welcome to Lumache's documentation!
+Welcome to Mjolnirs's documentation!
 ===================================
+
+Mjolnir is a computing cluster purchased by a grouop of PI’s from the Globe Institute located at the University of Copenhagen.
+
 
 **Lumache** (/lu'make/) is a Python library for cooks and food lovers
 that creates recipes mixing random ingredients.
