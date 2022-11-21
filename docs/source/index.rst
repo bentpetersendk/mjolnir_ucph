@@ -11,12 +11,12 @@ how to :ref:`installation` the project.
 
 .. note::
 
-   This project is under active development.
+   This documentation is under active development.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   What does Mjolnir mean?
+   Starting out on Mjolnir – VPN access required
