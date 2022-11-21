@@ -1,6 +1,6 @@
 Welcome to Mjolnirs's documentation!
 ===================================
-**Mjolnir** is a is a computational infrastructure purchased by a handfull of PI’s from the `Globe Institute https://globe.ku.dk`
+**Mjolnir** is a is a computational infrastructure purchased by a handfull of PI’s from Globe Institute. 
 
 
 
