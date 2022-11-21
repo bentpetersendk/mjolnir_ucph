@@ -20,3 +20,8 @@ Contents
 
    usage
    Starting out on Mjolnir – VPN access required
+   
+.. toctree::
+
+   usage
+   api
