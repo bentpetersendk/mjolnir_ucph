@@ -20,5 +20,6 @@ Contents
 .. toctree::
 
    Home <self>
+   What is Mjolnir? <mjolnir>
    usage
    api
