@@ -18,7 +18,7 @@ Mjolnir consist of both CPU and GPU nodes, each with very different CPU/GPU and 
      - 96 tasks
      - N/A
      - 125GB
-     - N/A
+     - No compute allowed, only copy etc. 
    * - mjolnircomp01fl
      - Computation
      - 96 tasks
@@ -42,6 +42,18 @@ Mjolnir consist of both CPU and GPU nodes, each with very different CPU/GPU and 
      - 96 tasks
      - N/A
      - 1TB
+     - cpuqueue
+   * - mjolnircomp05fl
+     - Computation
+     - 128 tasks
+     - N/A
+     - 512gb
+     - cpuqueue  
+   * - mjolnircomp06fl
+     - Computation
+     - 128 tasks
+     - N/A
+     - 512gb
      - cpuqueue
    * - mjolnirgpu01fl
      - Computation
