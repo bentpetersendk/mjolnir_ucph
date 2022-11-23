@@ -19,5 +19,5 @@ Contents
 .. toctree::
 
    Home <self>
-   usages
+   usage
    api
