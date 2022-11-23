@@ -19,3 +19,4 @@ Contents
 
    Home <self>
    mjolnir
+   vpn
