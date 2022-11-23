@@ -3,11 +3,10 @@
 Welcome to Mjolnirs's documentation!
 ===================================
 
-Mjolnir is a computing cluster purchased by a group of PI’s from the Globe Institute located at the University of Copenhagen.
+Mjolnir is a computing cluster purchased by a group of PI’s from the Globe Institute located at the University of Copenhagen. Under employees or collaborators to the PI's can get access to Mjolnir.
 
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`mjolnir` section for further information.
 
 .. note::
 
