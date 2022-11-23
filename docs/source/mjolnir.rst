@@ -5,6 +5,7 @@ Mjolnir is a computing cluster purchased by a group of PI’s from the Globe Ins
 Only employees or collaborators to the PI's can get access to Mjolnir.
 
 The cluster is currently maintained by:
+
 `Bent Petersen <https://globe.ku.dk/staff-list/hologenomics/?id=271131&vis=medarbejder>`
 
 and
