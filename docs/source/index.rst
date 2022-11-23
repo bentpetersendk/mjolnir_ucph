@@ -19,5 +19,6 @@ Contents
 .. toctree::
 
    Home <self>
+   What is Mjolnir? <mjolnir.rst>
    usage
    api
