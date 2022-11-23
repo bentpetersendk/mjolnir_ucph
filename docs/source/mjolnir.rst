@@ -6,10 +6,8 @@ Only employees or collaborators to the PI's can get access to Mjolnir.
 
 The cluster is currently maintained by:
 
-`Bent Petersen <https://globe.ku.dk/staff-list/hologenomics/?id=271131&vis=medarbejder>`
-
-`sign in to GitHub <https://github.com/login>`_
+`Bent Petersen <https://globe.ku.dk/staff-list/hologenomics/?id=271131&vis=medarbejder>`_
 
 and
 
-`Thomas Sicheritz-Pontén <https://globe.ku.dk/staff-list/hologenomics/?pure=en/persons/635914>`
+`Thomas Sicheritz-Pontén <https://globe.ku.dk/staff-list/hologenomics/?pure=en/persons/635914>`_
