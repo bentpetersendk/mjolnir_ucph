@@ -20,3 +20,4 @@ Contents
    Home <self>
    mjolnir
    vpn
+   architecture_hardware
