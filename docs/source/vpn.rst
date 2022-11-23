@@ -8,4 +8,4 @@ Connect to KU VPN via **Cisco AnyConnect** which have to be downloaded from http
 
 For any problems with KU VPN, please go to 
 https://kunet.ku.dk/employee-guide/Pages/IT/Remote-access.aspx 
-Or contact KU-IT. We can not help you with problems related to VPN.
+or contact KU-IT. We can not help you with problems related to VPN.
