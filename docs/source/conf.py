@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Mjolnir-ucph'
+copyright = '2022, Bent Petersen'
+author = 'Bent Petersen'
 
 release = '0.1'
 version = '0.1.0'
