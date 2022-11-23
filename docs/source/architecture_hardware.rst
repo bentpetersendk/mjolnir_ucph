@@ -1,10 +1,10 @@
 Architecture: hardware
 =====
 
-Mjolnir consist of both CPU and GPU nodes, each with very different CPU/GPU and memor setups
+Mjolnir consist of both CPU and GPU nodes, each with very different CPU/GPU and memor setups.
 
 .. list-table:: Title
-   :widths: 16 16 16 16 16 16 
+   :widths: 14 14 14 14 14 10 
    :header-rows: 1
 
    * - Name
