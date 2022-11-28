@@ -1,5 +1,9 @@
-Data folders
+Architecture: Data folders
 ====
+
+
+Data folders
+*****
 When you are working at Mjolnir there are some folders you need to be aware of.
 
 **/home/<KU-ID>**
@@ -14,7 +18,7 @@ Upload finished project data (Raw data/results/notes etc) to ERDA
 
 
 Databases
-====
+*****
 
 Databases can be stored in a common folder for access to everyone.
 
