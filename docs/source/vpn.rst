@@ -1,11 +1,11 @@
 VPN access
 ====
 
-In order to connect to Mjolnir, a connection to the KU-IT VPN is required. 
+In order to connect to Mjolnir, a connection to the KU-IT VPN is required using **Cisco AnyConnect**. 
+
 **There is no exception to this**. 
 
-Connect to KU VPN via **Cisco AnyConnect** which have to be downloaded from https://vpn.ku.dk due to special customization.
-**Cisco AnyConnect** downloaded from any other website than https://vpn.ku.dk **will not work**. 
+Due to special customization of the software, you can only use **Cisco AnyConnect** which have to be downloaded from https://vpn.ku.dk. Version downloaded from other websites or used previously at other institutions will not work.
 
 For any problems with KU VPN, please go to 
 https://kunet.ku.dk/employee-guide/Pages/IT/Remote-access.aspx 
