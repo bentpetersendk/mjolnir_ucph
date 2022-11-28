@@ -80,7 +80,14 @@ Please note the differences when you are booking your jobs.
      - 256 tasks
      - 4 x NVIDIA A100-SXM
      - 2TB
-     - cpuqueue/gpuqueue  
+     - cpuqueue/gpuqueue
+   * - Total
+     -
+     - 1.440 tasks
+     - 
+     - 11,125TB
+     -
+     
 
 
      
