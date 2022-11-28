@@ -56,6 +56,13 @@ Please note the differences when you are booking your jobs.
      - N/A
      - 512gb
      - cpuqueue
+   * - mjolnircomp07fl
+     - Ordered, will be delivered 8 Jan 2023
+     - 64 tasks
+     - N/A
+     - 1024gb
+     - cpuqueue
+     
    * - mjolnirgpu01fl
      - Computation
      - 128 tasks
