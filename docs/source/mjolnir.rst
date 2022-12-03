@@ -1,6 +1,5 @@
 What is Mjolnir?
 =====
-
 Mjolnir is a computing cluster purchased by a group of PI’s from the Globe Institute located at the University of Copenhagen. 
 Only employees of or collaborators to the PI's can get access to Mjolnir.
 
