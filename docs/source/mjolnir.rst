@@ -19,3 +19,8 @@ Where is Mjolnir located?
 Mjolnir is physically located at the Panum computing center. This means that it is integrated into the KU-IT infrastructure with all their security measures applied.
 
 This also means that you can only access Mjolnir via VPN and **only** using Cisco AnyConnect downloaded from https://vpn.ku.dk. Furthermore, only Globe associated users will be able to use Mjolnir. Check out the :doc:`vpn` section for further information.
+
+Is Mjolnir similar to anh other HPC?
+*****
+In short – yes, but Mjolnir is built from scratch so there will not be the rich history of installed software.
+Also, if you have been using other HPC’s before, you will need to re-adjust your scripts as the physical servers has a different setup at Mjolnir (see more in :doc:`architecture_hardware.rst`). This is very important for correct utilization of resources and fair-share with your colleagues.
