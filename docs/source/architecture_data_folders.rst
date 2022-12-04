@@ -6,13 +6,13 @@ Data folders
 *****
 When you are working at Mjolnir there are some folders you need to be aware of.
 
-    .. code-block:: bash
+    .. code-block:: console
 
       /home/<KU-ID>
 This is your home directory. You are not suppoose to store any data here, and you therefore only have a 10GB storage limit
 
 
-    .. code-block:: bash
+    .. code-block:: console
 
         /projects/mjolnir1/people/<KU-ID>
 
@@ -27,7 +27,7 @@ Databases
 
 Databases can be stored in a common folder for access to everyone.
 
-    .. code-block:: bash
+    .. code-block:: console
 
         /projects/mjolnir1/data/databases
 
