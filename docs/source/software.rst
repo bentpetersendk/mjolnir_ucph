@@ -18,4 +18,4 @@ If you want to load ``bwa version 0.7.17`` you simply type
    conda activate /projects/mjolnir1/apps/conda/bwa-0.7.17
 
 For more information in using ``conda environments``, please refer to:
-`Conda userguide (Conda userguide) <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_
+`Conda userguide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_
