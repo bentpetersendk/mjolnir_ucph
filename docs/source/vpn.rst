@@ -16,9 +16,13 @@ Login
 Login can only happen when you are connected to the KU-VPN using **Cisco AnyConnect**
 After you have successfylly connected to the VPN, launch your favorite terminal application and type
 
+.. code-block:: console
+
+   (.venv) $ pip install lumache
+
 .. codeblock:: console
 
-      ssh <KU-ID>@mjolnirhead01fl.unicph.domain
+   ssh <KU-ID>@mjolnirhead01fl.unicph.domain
 
 Remember to replace ``<KU-ID>`` with your own KU userID.
 Your password is the same password you have associated with your KU-ID.
