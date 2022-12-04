@@ -19,3 +19,4 @@ Contents
    vpn
    architecture_hardware
    architecture_data_folders
+   software
