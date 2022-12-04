@@ -11,7 +11,7 @@ Version specific conda environments can be located in:
 
    /projects/mjolnir1/apps/conda/software-version
    
-If you want to load ``bwa version 0.7.17`` you simply type
+If you want to load ``bwa version 0.7.17`` you simply type:
 
 .. code-block:: console
 
