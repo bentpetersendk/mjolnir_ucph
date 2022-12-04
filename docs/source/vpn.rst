@@ -18,10 +18,6 @@ After you have successfylly connected to the VPN, launch your favorite terminal 
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
-
-.. codeblock:: console
-
    ssh <KU-ID>@mjolnirhead01fl.unicph.domain
 
 Remember to replace ``<KU-ID>`` with your own KU userID.
