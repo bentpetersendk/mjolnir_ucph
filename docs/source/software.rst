@@ -24,5 +24,5 @@ When you are finished using the software and want to deactivate it, you type:
 
    conda deactivate
 
-For more information in using ``conda environments``, please refer to:
+For more information in using ``conda environments`` please refer to:
 `Conda userguide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_
