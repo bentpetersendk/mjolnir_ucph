@@ -2,7 +2,7 @@ Architecture: Data folders
 ====
 
 
-Data folders
+Project/data folders
 *****
 When you are working at Mjolnir there are some folders you need to be aware of.
 
