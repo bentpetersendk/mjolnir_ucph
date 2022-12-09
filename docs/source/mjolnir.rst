@@ -22,5 +22,5 @@ This also means that you can only access Mjolnir via VPN and **only** using Cisc
 
 Is Mjolnir similar to any other HPC?
 *****
-In short – yes, but Mjolnir is built from scratch so there will not be the rich history of installed software, yet. We are working very hard to change that.
+In short – yes, but as Mjolnir is built from scratch in early 2022, there will not be the rich history of installed software, yet. We are working very hard to change that.
 Notice, if you have been using other HPC’s before, you will need to re-adjust your scripts as the physical servers has a different setup at Mjolnir (see more in :doc:`architecture_hardware`), compared to what you have been using before. This is very important for correct utilization of resources and fair-share with your colleagues.
