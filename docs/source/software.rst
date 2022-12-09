@@ -1,7 +1,8 @@
 Software
 =====
 
-Software can be loaded in two ways: using Conda environment or load as module
+Software can be loaded in two ways: using a Conda environment or loaded as a module.
+For most users, loading the software as a module is the preferred way to work.
 
 Conda Environments
 -----
