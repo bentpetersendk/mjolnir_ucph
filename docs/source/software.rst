@@ -12,11 +12,17 @@ Version specific conda environments can be located in:
 
    /projects/mjolnir1/apps/conda/software-version
    
-If you want to load ``bwa version 0.7.17`` you simply type:
+If you want to activate the Conda environment ``bwa version 0.7.17`` you simply type:
 
 .. code-block:: console
 
    conda activate /projects/mjolnir1/apps/conda/bwa-0.7.17
+
+When you are finished using the software and want to deactivate it, you type:
+
+.. code-block:: console
+
+   conda deactivate
 
 For more information in using ``conda environments``, please refer to:
 `Conda userguide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_
