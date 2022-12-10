@@ -17,7 +17,7 @@ Contents
    Home <self>
    mjolnir
    vpn
-   architecture_hardware
+   hardware
    architecture_data_folders
    backup
    software
