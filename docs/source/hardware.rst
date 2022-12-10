@@ -1,4 +1,4 @@
-Architecture: hardware
+Hardware
 =====
 
 Mjolnir consist of both CPU and GPU nodes, each with very different CPU/GPU and memory setups.
