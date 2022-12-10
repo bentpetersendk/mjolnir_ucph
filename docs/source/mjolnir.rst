@@ -9,7 +9,7 @@ The cluster is maintained by:
 What does Mjolnir mean??
 *****
 
-Mjölnir is the `hammer <https://en.wikipedia.org/wiki/Mj%C3%B6lnir>`_ of the thunder god `Thor <https://en.wikipedia.org/wiki/Thor`_ in `Norse mythology <https://en.wikipedia.org/wiki/Norse_mythology>`_, used both as a devastating weapon and as a divine instrument to provide blessings.
+Mjölnir is the `hammer <https://en.wikipedia.org/wiki/Mj%C3%B6lnir>`_ of the thunder god `Thor <https://en.wikipedia.org/wiki/Thor>`_ in `Norse mythology <https://en.wikipedia.org/wiki/Norse_mythology>`_, used both as a devastating weapon and as a divine instrument to provide blessings.
 
 We use Mjolnir to **hammer big data to solve small research questions**. Thank you Tom for the excellent naming!
 
