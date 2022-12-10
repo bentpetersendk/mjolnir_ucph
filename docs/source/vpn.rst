@@ -11,9 +11,7 @@ For any problems with KU VPN, please go to
 https://kunet.ku.dk/employee-guide/Pages/IT/Remote-access.aspx 
 or contact KU-IT. We can not help you with problems related to VPN.
 
-Login
--------------
-Login can only happen when you are connected to the KU-VPN using **Cisco AnyConnect**.
+Login is only possible when you are connected to the KU-VPN using **Cisco AnyConnect**.
 After you have successfully connected to the VPN, launch your favorite terminal application and type:
 
 .. code-block:: console
