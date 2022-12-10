@@ -1,6 +1,6 @@
 What is Mjolnir?
 =====
-Mjolnir is a computing cluster purchased by a group of PI’s from the Globe Institute located at the University of Copenhagen. 
+Mjölnir is a computing cluster purchased by a group of PI’s from the Globe Institute located at the University of Copenhagen. 
 Only employees of or collaborators to the PI's can get access to Mjolnir.
 
 The cluster is maintained by:
@@ -9,7 +9,7 @@ The cluster is maintained by:
 What does Mjolnir mean??
 *****
 
-Mjölnir is the `hammer <https://en.wikipedia.org/wiki/Mj%C3%B6lnir>`_ of the thunder god `Thor <https://en.wikipedia.org/wiki/Thor>`_ in `Norse mythology <https://en.wikipedia.org/wiki/Norse_mythology>`_, used both as a devastating weapon and as a divine instrument to provide blessings.
+Mjölnir (or Mjolnir for non-danish keyboards) is the `hammer <https://en.wikipedia.org/wiki/Mj%C3%B6lnir>`_ of the thunder god `Thor <https://en.wikipedia.org/wiki/Thor>`_ in `Norse mythology <https://en.wikipedia.org/wiki/Norse_mythology>`_, used both as a devastating weapon and as a divine instrument to provide blessings.
 
 The naming of our HPC-infrastructure came to life as we will be using Mjolnir to **hammer big data to solve small research questions**. Thank you Tom for the excellent naming!
 
