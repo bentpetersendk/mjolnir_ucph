@@ -11,7 +11,7 @@ What does Mjolnir mean??
 
 Mjölnir is the `hammer <https://en.wikipedia.org/wiki/Mj%C3%B6lnir>`_ of the thunder god `Thor <https://en.wikipedia.org/wiki/Thor>`_ in `Norse mythology <https://en.wikipedia.org/wiki/Norse_mythology>`_, used both as a devastating weapon and as a divine instrument to provide blessings.
 
-The naming came to life as we will be using Mjolnir to **hammer big data to solve small research questions**. Thank you Tom for the excellent naming!
+The naming of our HPC-infrastructure came to life as we will be using Mjolnir to **hammer big data to solve small research questions**. Thank you Tom for the excellent naming!
 
 Where is Mjolnir located?
 *****
