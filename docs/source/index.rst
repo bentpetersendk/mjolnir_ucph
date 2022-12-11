@@ -18,6 +18,7 @@ Contents
    mjolnir
    vpn
    hardware
-   architecture_data_folders
+   project_data_folders
+   databases
    backup
    software
