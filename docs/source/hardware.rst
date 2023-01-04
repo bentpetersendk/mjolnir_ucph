@@ -2,7 +2,7 @@ Hardware
 =====
 
 Mjolnir consist of both CPU and GPU nodes, each with very different CPU/GPU and memory setups.
-Please note the differences when you are booking your jobs.
+Please note the differences when you are booking your jobs as it will affect the efficiency of the running jobs. If you book resources than you use, then you will block the servers for your colleagues who also want to compute.
 
 .. list-table:: Mjolnir hardware architecture
    :widths: 14 14 20 14 14 20 
