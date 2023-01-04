@@ -7,7 +7,7 @@ Mjolnir is a computing cluster purchased by a group of PI’s from the Globe Ins
 
 .. note::
 
-   This documentation is under constant active development.
+   This documentation is under active development and should not be considered as being finished. It's a live document.
 
 Contents
 --------
