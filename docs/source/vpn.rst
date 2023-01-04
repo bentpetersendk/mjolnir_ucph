@@ -24,3 +24,6 @@ Your password is the same password you have associated with your KU-ID.
 We have one login node which is called **mjolnirhead01fl** (:doc:`architecture_hardware`). **No heavy computation** is allowed at this node, as this is the entrance to Mjolnir for every registered user we have. If the node goes down, nobody will be able to login.
 
 If you are successfully connected to KU VPN using **Cisco AnyConnect**, but is otherwise unable to login to Mjolnir, please contact Bent.
+
+You can also type::
+    Dette er en test 
