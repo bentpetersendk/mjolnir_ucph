@@ -27,7 +27,7 @@ Usingthe command ``module avail`` will list all the software available in the cl
   anaconda3/2020.11  cellranger-arc/2.0.0       cuda/11.8         gcc/11.2.0          lightgbm/3.3.2-cpu     openjdk/13.0.1      qpdf/10.3.1           
   anaconda3/2021.05  cellranger-atac/2.0.0      cudnn/8.1.1       gctf/1.06           ltr-retriever/2.9.0    openmpi/4.1.0       R/3.5.0               
   anaconda3/2021.11  cellranger/2.0.0           cudnn/8.2.1       genozip/11.0.11     mageck/0.5.9.4         openssl/1.1.1j      R/3.6.1
-    ...
+  ...
 
   -------------------------- /projects/mjolnir1/apps/modules ------------------------
   abricate/1.0.1                  cmake/3.22.2           geos/3.10.2                      megahit/1.2.9                       plink/1.90b6.21          
@@ -38,7 +38,7 @@ Usingthe command ``module avail`` will list all the software available in the cl
   adapterremoval/2.3.3            conterminator/1.c74b5  glimpse/4.18.7                   metacache/2.2.1                     poetry/1.1.13            
   adapterremovalfixprefix/0.0.5   crux-toolkit/3.2       gnu-parallel/20161122            metacache/2.2.3                     poetry/1.3.1             
   admixfrog/20221018              crux-toolkit/4.1       gnuplot/5.4.3                    metagenome-atlas/2.8.2              polypolish/0.5.0         
-    ...
+  ...
 
 
 
