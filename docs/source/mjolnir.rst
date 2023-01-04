@@ -16,7 +16,7 @@ The naming of our HPC-infrastructure came to life as we will be using Mjolnir to
 Where is Mjolnir located?
 *****
 
-Mjolnir is physically located at the Panum computing center. This means that all Mjolnirs servers are integrated into the KU-IT infrastructure with all their security measures applied.
+Mjolnir is physically located at the Panum computing center. This means that all the servers included in the Mjolnir cluster are integrated into the KU-IT infrastructure with all their security measures applied.
 
 This also means that you can only access Mjolnir via UCPH-VPN and **only** using Cisco AnyConnect downloaded from https://vpn.ku.dk. Furthermore, only Globe associated users will be able to use Mjolnir. Check out the :doc:`vpn` section for further information.
 
