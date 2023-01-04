@@ -1,7 +1,7 @@
 Backup
 ======
 
-In most directories there is a hidden directory called ``.snapshot``. This is your savour. Here you will find a daily backup with a snapshot of your data. The data is kept for 7 days, unless there is a lack of diskspace, then it might be less. You should therefore not rely on that you can always retrieve your files again within 7 days, it might be less.
+In most directories there is a hidden directory called ``.snapshot``. This is your savour. Here you will find a daily backup with a snapshot of your data. The data is kept for 7 days, unless there is a lack of diskspace, then it might be less. You should, therefore, not rely on that you can always retrieve your files within 7 days, it might be less.
 
 .. image:: backup.png
    :alt: Scrrenshot of .snapshot folder 
