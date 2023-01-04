@@ -14,7 +14,7 @@ The module system is a concept available on most cluster, simplifying the use of
 
 List Available Software
 -----
-Usingthe command ``module avail`` will list all the software available in the cluster
+Using the command ``module avail`` will list all the software available in the cluster
 
 .. code-block:: bash
 
@@ -40,7 +40,7 @@ Usingthe command ``module avail`` will list all the software available in the cl
   admixfrog/20221018             crux-toolkit/4.1       gnuplot/5.4.3          metagenome-atlas/2.8.2  polypolish/0.5.0         
   ...
 
-As the output from ''module avail'' is quite long it is recommended to pipe the output into ''less'' and then press ''space'' to change page: ''module avail | less -S''.
+As the output from ``module avail`` is quite long it is recommended to pipe the output into ``less``: ``module avail | less -S``
 
 
 
