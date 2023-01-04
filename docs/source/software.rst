@@ -4,6 +4,15 @@ Software
 Software can be loaded in two ways: using a Conda environment or loaded as a module.
 For most users, loading the software as a module is the preferred way to work.
 
+Modules
+-----
+A more extensive guide to using modules will be added soon...
+
+What is a module?
+****
+A module is...
+
+
 Conda Environments
 -----
 Version specific conda environments can be located in:
@@ -26,3 +35,9 @@ When you are finished using the software and want to deactivate it, you type:
 
 For more information in using ``conda environments`` please refer to:
 `Conda userguide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_
+
+
+Installed Software
+-----
+A list of installed software will come...
+
