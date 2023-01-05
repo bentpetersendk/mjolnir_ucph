@@ -42,7 +42,7 @@ Using the command ``module avail`` will list all the software available in the c
 
 .. tip::
 
-  the output from ``module avail`` is quite long it is recommended to 
+  As the output from ``module avail`` is quite long, it is recommended to 
   pipe the output into ``less``
   To get around this you can do the following,
 
