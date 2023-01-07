@@ -82,3 +82,8 @@ A list of installed software will come...
 .. raw:: html
 
        <iframe class="airtable-embed" src="https://airtable.com/embed/shrSAy6vSkKIHQbTz?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+
+.. raw:: html
+
+       <iframe class="airtable-embed" src="https://airtable.com/embed/shrSAy6vSkKIHQbTz?backgroundColor=yellow&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
