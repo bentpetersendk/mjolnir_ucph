@@ -75,9 +75,9 @@ For more information in using ``conda environments`` please refer to:
 `Conda userguide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_
 
 
-Installed Software
+Installed Modules
 -----
-A list of installed software will come...
+The following software can be loaded as modules.
 
 .. raw:: html
 
