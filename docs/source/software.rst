@@ -68,13 +68,14 @@ on.
   NOTE: This is a conda-environment and conflicts with dependencies of other modules may occur
   -------------------------------------------------------------------
 
-Modules can be loaded with the command ``module load <module-name>``. If you want to load *adapterremoval version 2.3.3* you simply type: ``module load adapterremoval/2.3.2``
+Modules can be loaded with the command ``module load <module-name>``. 
+If you want to load *adapterremoval version 2.3.3* you simply type: ``module load adapterremoval/2.3.2``
 
 
 Load/Unload Modules
 ****
 
-You can see what modules you have loaded with: ``modile list``
+You can see which modules you have loaded with: ``module list``
 
 .. code-block:: bash
 
@@ -82,14 +83,16 @@ You can see what modules you have loaded with: ``modile list``
   Currently Loaded Modulefiles:
   1) adapterremoval/2.3.3   2) bwa/0.7.17   3) tensorflow/2.10.0
   
-Modules can have multiple versions of the software. You can see the various versions either with ``module avail <modulename>``
+Modules can have multiple versions of the software. You can see the various 
+versions either with ``module avail <modulename>``
 
 .. code-block:: bash
 
   $ module avail bwa
   bwa/0.7.15  bwa/0.7.17
   
-You can also search for all modules with a specific keyword in their description using: ``module apropos <keyword>``
+You can also search for all modules with a specific keyword in their 
+description using: ``module apropos <keyword>``
 
 .. code-block:: bash
 
@@ -98,11 +101,27 @@ You can also search for all modules with a specific keyword in their description
   bwa/0.7.17: BWA 0.7.17 is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome. It consists of three algorithms: BWA-backtrack, BWA-SW and BWA-MEM. The first algorithm is designed for Illumina sequence reads up to 100bp, while the rest two for longer sequences ranged from 70bp to 1Mbp. BWA-MEM and BWA-SW share similar features such as long-read support and split alignment, but BWA-MEM, which is the latest, is generally recommended for high-quality queries as it is faster and more accurate. BWA-MEM also has better performance than BWA-backtrack for 70-100bp Illumina reads.
   circularMapper/1.93.5: circularmapper 1.93.5 A method to improve mappings on circular genomes, using the BWA mapper.
 
+You can load a module by doing:
+.. code-block:: bash
 
+  # Load the latest version of the module
+  module load modulename
+
+  # Load a specific version of a module
+  module load modulename/version
+  
+You can unload a module:
+.. code-block:: bash
+  module unload modulename
+
+You can also unload ALL loaded modules:
+.. code-block:: bash
+  module purge
 
 Installed Modules
 ****
-The following software can be loaded as modules. You can sort after "date" to see the newest installed.
+The following software can be loaded as modules. 
+You can sort after "date" to see the newest installed.
 
 .. raw:: html
 
