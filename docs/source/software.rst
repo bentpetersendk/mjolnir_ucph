@@ -77,7 +77,7 @@ For more information in using ``conda environments`` please refer to:
 
 Installed Modules
 -----
-The following software can be loaded as modules. The list is sorted after "date", "Software name" and "version".
+The following software can be loaded as modules. You can sort after "date" to see the newest installed.
 
 .. raw:: html
 
