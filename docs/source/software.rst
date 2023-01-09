@@ -84,7 +84,7 @@ You can see which modules you have loaded with: ``module list``
   1) adapterremoval/2.3.3   2) bwa/0.7.17   3) tensorflow/2.10.0
   
 Modules can have multiple versions of the software. You can see the various 
-versions either with ``module avail <modulename>``
+versions with ``module avail <modulename>``
 
 .. code-block:: bash
 
