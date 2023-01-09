@@ -77,7 +77,7 @@ For more information in using ``conda environments`` please refer to:
 
 Installed Modules
 -----
-The following software can be loaded as modules.
+The following software can be loaded as modules. The list is sorted after "date", "Software name" and "version".
 
 .. raw:: html
 
