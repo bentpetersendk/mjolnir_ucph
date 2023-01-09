@@ -49,9 +49,31 @@ Using the command ``module avail`` will list all the software available in the c
 
     $ module avail | less -S
 
-Loading modules
-****
+To see what a module actually is doing you can use ``module show <module
+name>``. Modules are typically not doing much more than prepending/appending
+things to key environment variables like ``$PATH``, ``$LD_LIBRARY_PATH`` and so
+on.
+
+.. code-block:: bash
+
+  $ module show adapterremoval
+  module show adapterremoval
+  -------------------------------------------------------------------
+  /projects/mjolnir1/apps/modules/adapterremoval/2.3.3:
+
+  module-whatis   {AdapterRemoval 2.3.3 searches for and removes remnant adapter sequences from High-Throughput Sequencing (HTS) data and (optionally) trims low quality bases from the 3' end of reads following adapter removal. AdapterRemoval can analyze both single end and paired end data, and can be used to merge overlapping paired-ended reads into (longer) consensus sequences. Additionally, Additionally, AdapterRemoval can construct a consensus adapter sequence for paired-ended reads, if which this information is not available.}
+
+  conflict        adapterremoval
+  prepend-path    PATH /projects/mjolnir1/apps/conda/adapterremoval-2.3.3/bin
+  NOTE: This is a conda-environment and conflicts with dependencies of other modules may occur
+  -------------------------------------------------------------------
+
+
+
 Modules can be loaded with the command ``module load <module-name>``. If you want to load *adapterremoval version 2.3.3* you simply type: ``module load adapterremoval/2.3.2``
+
+
+
 
 Installed Modules
 ****
