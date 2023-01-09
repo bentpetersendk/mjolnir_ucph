@@ -102,6 +102,7 @@ description using: ``module apropos <keyword>``
   circularMapper/1.93.5: circularmapper 1.93.5 A method to improve mappings on circular genomes, using the BWA mapper.
 
 You can load a module by doing:
+
 .. code-block:: bash
 
   # Load the latest version of the module
@@ -111,10 +112,12 @@ You can load a module by doing:
   module load modulename/version
   
 You can unload a module:
+
 .. code-block:: bash
   module unload modulename
 
 You can also unload ALL loaded modules:
+
 .. code-block:: bash
   module purge
 
