@@ -118,7 +118,7 @@ You can also unload ALL loaded modules:
 .. code-block:: bash
   module purge
 
-Installed Modules
+Listing all installed modules
 ****
 The following software can be loaded as modules. 
 You can sort after "date" to see the newest installed.
