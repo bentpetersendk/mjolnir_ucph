@@ -12,7 +12,7 @@ What is a module?
 The module system is a concept available on most cluster, simplifying the use of different software and software-versions in a precise and controlled manner. In general, more software is installed than the average user will ever use, and often there will be several versions provided for a package where it will be necessary for a user to choose between them. Furthermore, two different software packages might clash with eachother as they could overlap when loaded together. Loading software as modular packages overcomes this problem, as the module will manage the user environment for the installed software. In each module it is possible to define pre-requisites (other software it is depending on), or define which software can not be loaded at the same time to avoid conflict.
 
 List Available Software
------
+****
 Using the command ``module avail`` will list all the software available in the cluster
 
 .. code-block:: bash
