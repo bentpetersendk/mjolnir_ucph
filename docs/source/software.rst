@@ -51,6 +51,16 @@ Using the command ``module avail`` will list all the software available in the c
     $ module avail | less -S
 
 
+Installed Modules
+****
+The following software can be loaded as modules. You can sort after "date" to see the newest installed.
+
+.. raw:: html
+
+       <iframe class="airtable-embed" src="https://airtable.com/embed/shrSAy6vSkKIHQbTz?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+
+
 Conda Environments
 -----
 Version specific conda environments can be located in:
@@ -74,11 +84,3 @@ When you are finished using the software and want to deactivate it, you type:
 For more information in using ``conda environments`` please refer to:
 `Conda userguide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_
 
-
-Installed Modules
------
-The following software can be loaded as modules. You can sort after "date" to see the newest installed.
-
-.. raw:: html
-
-       <iframe class="airtable-embed" src="https://airtable.com/embed/shrSAy6vSkKIHQbTz?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
