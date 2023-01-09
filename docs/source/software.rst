@@ -6,7 +6,6 @@ For most users, loading the software as a module is the preferred way to work.
 
 Modules
 -----
-A more extensive guide to using modules will be added soon...
 
 What is a module?
 ****
