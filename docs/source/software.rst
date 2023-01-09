@@ -72,20 +72,31 @@ Modules can be loaded with the command ``module load <module-name>``. If you wan
 
 
 Load/Unload Modules
--------------------
+****
 
-You can see what modules you have loaded with,
+You can see what modules you have loaded with: ``modile list``
 
 .. code-block:: bash
 
   $ module list
-  1) sge/current
+  Currently Loaded Modulefiles:
+  1) adapterremoval/2.3.3   2) bwa/0.7.17   3) tensorflow/2.10.0
+  
+Modules can have multiple versions of the software. You can see the various versions either with ``module avail <modulename>``
 
-Modules can have multiple versions of the software, and you can see the various
-versions either with ``module avail`` or by doing,
+.. code-block:: bash
 
+  $ module avail bwa
+  bwa/0.7.15  bwa/0.7.17
+  
+You can also search for all modules with a specific keyword in their description using: ``module apropos <keyword>``
 
+.. code-block:: bash
 
+  $ module apropos bwa
+  bwa/0.7.15: BWA 0.7.15 is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome. It consists of three algorithms: BWA-backtrack, BWA-SW and BWA-MEM. The first algorithm is designed for Illumina sequence reads up to 100bp, while the rest two for longer sequences ranged from 70bp to 1Mbp. BWA-MEM and BWA-SW share similar features such as long-read support and split alignment, but BWA-MEM, which is the latest, is generally recommended for high-quality queries as it is faster and more accurate. BWA-MEM also has better performance than BWA-backtrack for 70-100bp Illumina reads.
+  bwa/0.7.17: BWA 0.7.17 is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome. It consists of three algorithms: BWA-backtrack, BWA-SW and BWA-MEM. The first algorithm is designed for Illumina sequence reads up to 100bp, while the rest two for longer sequences ranged from 70bp to 1Mbp. BWA-MEM and BWA-SW share similar features such as long-read support and split alignment, but BWA-MEM, which is the latest, is generally recommended for high-quality queries as it is faster and more accurate. BWA-MEM also has better performance than BWA-backtrack for 70-100bp Illumina reads.
+  circularMapper/1.93.5: circularmapper 1.93.5 A method to improve mappings on circular genomes, using the BWA mapper.
 
 
 
