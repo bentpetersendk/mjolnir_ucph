@@ -114,11 +114,13 @@ You can load a module by doing:
 You can unload a module:
 
 .. code-block:: bash
+
   module unload modulename
 
 You can also unload ALL loaded modules:
 
 .. code-block:: bash
+
   module purge
 
 Listing all installed modules
