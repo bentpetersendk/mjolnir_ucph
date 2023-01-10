@@ -126,7 +126,8 @@ You can also unload ALL loaded modules:
 Listing all installed modules
 ****
 The following software can be loaded as modules. 
-You can sort after "date" to see the newest installed.
+You can sort after "date" to see the newest installed. 
+The sorting function will only appear from a laptop.
 
 .. raw:: html
 
