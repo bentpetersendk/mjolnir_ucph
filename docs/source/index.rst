@@ -22,4 +22,5 @@ Contents
    databases
    backup
    software
+   newsoftware
    newuser
