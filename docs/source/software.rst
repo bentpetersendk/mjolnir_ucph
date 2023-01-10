@@ -133,14 +133,6 @@ The sorting function will only appear from a laptop.
 
        <iframe class="airtable-embed" src="https://airtable.com/embed/shrSAy6vSkKIHQbTz?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-
-Request new software
------
-If you want any software to be installed, please fill in the following form:
-
-`Software request form for Mjolnir software <https://airtable.com/shrEq4OyPXIhvyGuJ>`_.
-
-
 Conda Environments
 -----
 Version specific conda environments can be located in:
