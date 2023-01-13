@@ -21,6 +21,7 @@ Contents
    project_data_folders
    databases
    backup
+   disruptions
    software
    newsoftware
    newuser
