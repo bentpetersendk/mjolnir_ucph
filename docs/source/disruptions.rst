@@ -1,7 +1,7 @@
 Disruptions
 =====
 
-Scheduled and unscheduled disruptions:
+Scheduled and unscheduled disruptions. CLick on the card for more details:
 
 .. raw:: html
 
