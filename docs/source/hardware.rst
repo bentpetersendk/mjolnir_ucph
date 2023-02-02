@@ -20,7 +20,7 @@ If you book more resources than you use, then you will limit your colleagues to 
      - 96 tasks
      - N/A
      - 125GB
-     - No compute allowed, only copy etc. 
+     - No **compute** allowed, only rsync, sftp, editing data and moving data, or similar, is allowed. 
    * - mjolnircomp01fl
      - Computation
      - 96 tasks
