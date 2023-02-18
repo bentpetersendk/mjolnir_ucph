@@ -9,6 +9,13 @@ Both GPU and CPU machines are included in this queue, as the GPU machines also h
 
 When scheduling a job, take the architecture of the machines into consideration. For more information on Hardware setup, please see the :doc:`hardware` document.
 
+**Remember**
+
+The higher the job’s resource requirements, the longer it will take to find the resources to schedule it - so only book what you need. Your usage is computed using memory and CPU you asked for, not the actual usage. The higher your required usage, the lower priority your job will have.
+When you book a number of CPUs - then it must be the same as you are using in the command line. Fx, if you are running `bwa -t 4`, then you also need to book 4 CPU's.
+
+Don't ask for more resources than you actually need. You will loose priority on your next jobs running and your collegues jobs will be queued longer than is needed.
+
 Submitting an Interactive Job using `srun`
 *****
 
