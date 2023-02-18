@@ -105,7 +105,6 @@ Submitting batch arrays is a powerful way to automate running large numbers of s
 In this guide, we will discuss how to submit batch arrays to Slurm.
 
 *Prerequisites*
-
 Before we start, you should have a basic understanding of how to submit jobs to Slurm using sbatch, as well as the syntax for writing job scripts. You should also have a set of input files that you want to process in a batch array.
 
 Step 1: Create a Job Script
@@ -173,4 +172,111 @@ Step 4: Post-processing
 After the batch array has finished running, you may want to process the output files. In our example, the output of each job is written to a separate file with a unique name
 
 Batch arrays are a powerful tool for managing and executing large numbers of similar jobs. With Slurm and Mjolnir, you can easily submit and manage batch arrays to speed up your workflow and increase efficiency.
+
+
+Monitoring Jobs in SLURM
+*****
+
+After submitting a job to SLURM, it's important to monitor its status to check if it's running, has finished, or has encountered any errors. Here are some useful commands for monitoring SLURM jobs:
+
+squeue
+-------
+
+The `squeue` command lists all of the current jobs in the SLURM queue, including their job ID, status, and other information. Running `squeue` with no arguments will show all jobs in the queue, but you can also filter the output to show only your own jobs, for example, with the `-u` flag followed by your username:
+
+.. code-block:: console
+
+    $ squeue -u yourusername
+
+scontrol
+--------
+
+The `scontrol` command provides more detailed information about a specific job, such as its status, start and end times, and resources used. You can use `scontrol` to check the status of a job by specifying its job ID:
+
+.. code-block:: console
+
+    $ scontrol show job jobID
+
+sacct
+-----
+
+The `sacct` command provides a summary of all completed jobs, including their start and end times, exit code, and other information. To view information about your own jobs, you can use the `--user` flag followed by your username:
+
+.. code-block:: console
+
+    $ sacct --user yourusername
+
+You can also use various options to filter the output by time, job status, and other criteria. For more information on using `sacct`, you can run `man sacct` in the terminal.
+
+By using these commands, you can keep track of your jobs in SLURM and quickly identify any issues that may arise during the job's execution.
+
+Canceling Jobs in SLURM Using scancel
+*****
+
+Sometimes, you may need to cancel a job that you previously submitted to the SLURM queue. SLURM provides the `scancel` command for this purpose.
+
+To cancel a specific job, you need to know its Job ID (or `JOBID`), which you can obtain from the output of the `squeue` command, or by saving the job ID when you submitted the job.
+
+Canceling a Specific Job
+------------------------
+
+To cancel a specific job, run the following command:
+
+.. code-block:: console
+
+    $ scancel JOBID
+
+Replace `JOBID` with the ID of the job you want to cancel.
+
+Canceling Multiple Jobs
+------------------------
+
+If you want to cancel multiple jobs at once, you can specify a range of job IDs, separated by commas. For example:
+
+.. code-block:: console
+
+    $ scancel JOBID1,JOBID2,JOBID3
+
+This will cancel the jobs with IDs `JOBID1`, `JOBID2`, and `JOBID3`.
+
+You can also cancel all jobs submitted by a specific user, by running the following command:
+
+.. code-block:: console
+
+    $ scancel -u USERNAME
+
+Replace `USERNAME` with the name of the user whose jobs you want to cancel.
+
+Canceling a Job Array
+---------------------
+
+If you submitted a job array, you can cancel the entire array by canceling the job ID of the array task. For example, if your job array has the ID `123456`, you can cancel the entire array by running the following command:
+
+.. code-block:: console
+
+    $ scancel 123456
+
+This will cancel all tasks in the job array.
+
+Canceling Jobs by Partition or Node
+-----------------------------------
+
+You can also cancel all jobs running on a specific partition or node, by using the `--partition` or `--nodelist` option, respectively. For example:
+
+.. code-block:: console
+
+    $ scancel --partition=PARTITION_NAME
+
+This will cancel all jobs running on the partition named `PARTITION_NAME`.
+
+.. code-block:: console
+
+    $ scancel --nodelist=NODE_NAME
+
+This will cancel all jobs running on the node named `NODE_NAME`.
+
+Conclusion
+----------
+
+The `scancel` command provides a simple and powerful way to cancel jobs in the SLURM queue. By using the options described in this guide, you can cancel specific jobs, job arrays, or all jobs submitted by a specific user or running on a specific partition or node.
 
