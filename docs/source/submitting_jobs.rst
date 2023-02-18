@@ -10,7 +10,7 @@ Both GPU and CPU machines are included in this queue, as the GPU machines also h
 When scheduling a job, take the architecture of the machines into consideration. For more information on Hardware setup, please see the :doc:`hardware` document.
 
 Submitting Jobs to Mjolnir using sbatch
-====
+*****
 
 Mjolnir is a high-performance computing cluster that uses the SLURM scheduler to manage resources and jobs. To submit jobs to Mjolnir, you can use the `sbatch` command. This guide provides an advanced overview of how to submit jobs to Mjolnir using `sbatch`.
 
