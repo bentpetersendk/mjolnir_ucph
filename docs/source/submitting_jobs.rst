@@ -9,7 +9,7 @@ Both GPU and CPU machines are included in this queue, as the GPU machines also h
 
 When scheduling a job, take the architecture of the machines into consideration. For more information on Hardware setup, please see the :doc:`hardware` document.
 
-Submitting an Interactive Job with Specified Resources using `srun`
+Submitting an Interactive Job using `srun`
 *****
 
 `slurm` provides the `srun` command to submit interactive jobs on a compute node. Interactive jobs allow users to work directly on a compute node while monitoring their work in real time. In `srun`, users can specify a number of resources such as CPU, memory, and time requirements. Here is how to use `srun` to submit an interactive job with specific resource requirements.
@@ -45,7 +45,7 @@ For example, to request 2 CPUs, 4 GB of memory and 1 hour walltime, use the foll
 That's it! By following these steps, you can submit an interactive job with specific resource requirements using `srun`.
 
 
-Submitting Jobs to Mjolnir using sbatch
+Submitting Jobs using sbatch
 *****
 
 Mjolnir is a high-performance computing cluster that uses the SLURM scheduler to manage resources and jobs. To submit jobs to Mjolnir, you can use the `sbatch` command. This guide provides an advanced overview of how to submit jobs to Mjolnir using `sbatch`.
@@ -133,7 +133,7 @@ Conclusion
 By following the steps outlined in this guide, you should be able to submit jobs to Mjolnir using `sbatch`. Remember to consult the `sbatch` man page for a complete list of options and to monitor your jobs using `squeue`. For more information on `sbatch` and other SLURM commands, please see the official SLURM documentation.
 
 
-Submitting batch arrays with Slurm
+Submitting batch arrays
 *****
 
 Submitting batch arrays is a powerful way to automate running large numbers of similar jobs. Batch arrays are a set of jobs with identical code and parameters, but different input files. Each job in the array is identified by a unique index that is passed as an argument to the job script.
@@ -317,7 +317,7 @@ Conclusion
 The `scancel` command provides a simple and powerful way to cancel jobs in the SLURM queue. By using the options described in this guide, you can cancel specific jobs, job arrays, or all jobs submitted by a specific user or running on a specific partition or node.
 
 
-Monitoring Slurm nodes with sinfo
+Monitoring Slurm nodes with `sinfo
 *****
 
 The `sinfo` command is used to display information about nodes and partitions in the Slurm cluster.
