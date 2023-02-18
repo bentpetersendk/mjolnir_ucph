@@ -288,7 +288,7 @@ You can also cancel all jobs submitted by a specific user, by running the follow
 
     $ scancel -u USERNAME
 
-Replace `USERNAME` with the name of the user whose jobs you want to cancel.
+Replace `USERNAME` with the name of your user.
 
 Canceling a Job Array
 ---------------------
