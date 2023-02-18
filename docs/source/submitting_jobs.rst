@@ -9,6 +9,42 @@ Both GPU and CPU machines are included in this queue, as the GPU machines also h
 
 When scheduling a job, take the architecture of the machines into consideration. For more information on Hardware setup, please see the :doc:`hardware` document.
 
+Submitting an Interactive Job with Specified Resources using `srun`
+*****
+
+`slurm` provides the `srun` command to submit interactive jobs on a compute node. Interactive jobs allow users to work directly on a compute node while monitoring their work in real time. In `srun`, users can specify a number of resources such as CPU, memory, and time requirements. Here is how to use `srun` to submit an interactive job with specific resource requirements.
+
+1. Open a terminal and log in to the cluster.
+
+2. Start an interactive session by running the following command:
+    
+.. code-block:: console
+
+    $ srun --pty bash
+
+This command requests an interactive session on a compute node with a bash shell.
+
+3. Specify the resource requirements by including one or more of the following options:
+
+.. code-block:: console
+
+    - `--cpus-per-task`: Number of CPUs per task
+    - `--mem`: Memory per node (e.g., `--mem=4G`)
+    - `--time`: Time limit for the job (e.g., `--time=2:00:00` for 2 hours)
+
+For example, to request 2 CPUs, 4 GB of memory and 1 hour walltime, use the following command:
+
+.. code-block:: console
+   
+   $ srun --cpus-per-task=2 --mem=4G --time=1:00:00 --pty bash
+
+4. When the compute node is allocated, you will be logged in to the node with a bash shell. You can run your commands here as you would in a terminal.
+
+5. When you are finished with your work, exit the compute node by typing `exit` in the terminal.
+
+That's it! By following these steps, you can submit an interactive job with specific resource requirements using `srun`.
+
+
 Submitting Jobs to Mjolnir using sbatch
 *****
 
