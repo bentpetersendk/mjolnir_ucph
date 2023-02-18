@@ -30,3 +30,4 @@ Contents
    software
    newsoftware
    newuser
+   tips
