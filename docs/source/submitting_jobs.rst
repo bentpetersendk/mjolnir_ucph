@@ -29,11 +29,18 @@ Here is an example script:
    #SBATCH --error=myjob.err
    #SBATCH --ntasks=1
    #SBATCH --cpus-per-task=4
+   #SBATCH --mem-per-cpu=8G    # memory per cpu-core
    #SBATCH --time=01:00:00
+   #SBATCH --mail-type=begin        # send email when job begins
+   #SBATCH --mail-type=end          # send email when job ends
+   #SBATCH --mail-type=fail         # send email if job fails
+   #SBATCH --mail-user=your mail address
 
    echo "Hello world!"
 
 The first line of the script (`#!/bin/bash`) tells the system that this is a bash script. The remaining lines starting with `#SBATCH` are directives for `sbatch` that specify various options for the job. For example, the `--job-name` option specifies the name of the job, the `--output` option specifies the file where stdout files should be written, and the `--time` option specifies the maximum time that the job is allowed to run. See the `sbatch` man page for a complete list of options.
+
+*Remember to always specify the amount of cpu's and memory. If you don't the default values will be used and that will result in your job queuing for a long time.*
 
 Step 2: Submit your Job
 ------------------------
@@ -48,7 +55,7 @@ This will submit the job to the default queue with the default settings. You can
 
 .. code-block:: console
 
-    $ sbatch --partition=gpuqueue --gres=gpu:1 myscript.sh
+    $ sbatch --partition=gpuqueue --gres=gpu:1  myscript.sh
 
 This will submit the job to the `gpuqueue` queue and request one GPU resource.
 
@@ -60,7 +67,7 @@ After you submit a job, you can monitor its status using the `squeue` command. T
 
    $ squeue -u your_username
 
-This will show a list of all jobs submitted by `yourusername`. The output includes information such as the job ID, the job name, the partition, the status, and the time the job has been running.
+This will show a list of all jobs submitted by `your_username`. The output includes information such as the job ID, the job name, the partition, the status, and the time the job has been running.
 
 Step 3: Monitor your Job
 ------------------------
