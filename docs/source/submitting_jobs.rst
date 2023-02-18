@@ -109,7 +109,7 @@ In this guide, we will discuss how to submit batch arrays to Slurm.
 Before we start, you should have a basic understanding of how to submit jobs to Slurm using sbatch, as well as the syntax for writing job scripts. You should also have a set of input files that you want to process in a batch array.
 
 Step 1: Create a Job Script
-*****
+---------------------------
 
 The first step is to create a job script that will run a single job in the batch array. The script should use the SLURM_ARRAY_TASK_ID environment variable to identify which input file to process.
 
@@ -142,7 +142,8 @@ Let's break down the SLURM directives used in this script:
 Note that the input file is specified using the SLURM_ARRAY_TASK_ID environment variable, which takes on the values specified in the --array option. In this example, the input files are named input_1.txt, input_2.txt, ..., input_10.txt.
 
 Step 2: Submit the Batch Array
-*****
+---------------------------
+
 To submit the batch array, use the sbatch command with the job script:
 
 .. code-block:: bash
@@ -156,7 +157,7 @@ This will submit the batch array to Slurm. You can use the squeue command to che
     $ squeue -u username
 
 Step 3: Monitor the Progress of the Batch Array
-*****
+---------------------------
 
 You can monitor the progress of the batch array using the sacct command:
 
@@ -167,7 +168,7 @@ You can monitor the progress of the batch array using the sacct command:
 This command will show you the status of each job in the batch array, including its state and exit code.
 
 Step 4: Post-processing
-*****
+---------------------------
 
 After the batch array has finished running, you may want to process the output files. In our example, the output of each job is written to a separate file with a unique name
 
