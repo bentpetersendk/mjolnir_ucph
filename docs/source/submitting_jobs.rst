@@ -45,7 +45,7 @@ For example, to request 2 CPUs, 4 GB of memory and 1 hour walltime, use the foll
 That's it! By following these steps, you can submit an interactive job with specific resource requirements using `srun`.
 
 
-Submitting Jobs using sbatch
+Submitting Jobs using `sbatch`
 *****
 
 Mjolnir is a high-performance computing cluster that uses the SLURM scheduler to manage resources and jobs. To submit jobs to Mjolnir, you can use the `sbatch` command. This guide provides an advanced overview of how to submit jobs to Mjolnir using `sbatch`.
@@ -210,7 +210,7 @@ After the batch array has finished running, you may want to process the output f
 Batch arrays are a powerful tool for managing and executing large numbers of similar jobs. With Slurm and Mjolnir, you can easily submit and manage batch arrays to speed up your workflow and increase efficiency.
 
 
-Monitoring Jobs in SLURM
+Monitoring Jobs
 *****
 
 After submitting a job to SLURM, it's important to monitor its status to check if it's running, has finished, or has encountered any errors. Here are some useful commands for monitoring SLURM jobs:
@@ -246,7 +246,7 @@ You can also use various options to filter the output by time, job status, and o
 
 By using these commands, you can keep track of your jobs in SLURM and quickly identify any issues that may arise during the job's execution.
 
-Canceling Jobs in SLURM Using scancel
+Canceling Jobs using `scancel`
 *****
 
 Sometimes, you may need to cancel a job that you previously submitted to the SLURM queue. SLURM provides the `scancel` command for this purpose.
@@ -317,7 +317,7 @@ Conclusion
 The `scancel` command provides a simple and powerful way to cancel jobs in the SLURM queue. By using the options described in this guide, you can cancel specific jobs, job arrays, or all jobs submitted by a specific user or running on a specific partition or node.
 
 
-Monitoring Slurm nodes with `sinfo
+Monitoring nodes with `sinfo
 *****
 
 The `sinfo` command is used to display information about nodes and partitions in the Slurm cluster.
