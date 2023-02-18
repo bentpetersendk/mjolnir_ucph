@@ -96,3 +96,80 @@ Conclusion
 
 By following the steps outlined in this guide, you should be able to submit jobs to Mjolnir using `sbatch`. Remember to consult the `sbatch` man page for a complete list of options and to monitor your jobs using `squeue`. For more information on `sbatch` and other SLURM commands, please see the official SLURM documentation.
 
+
+Submitting batch arrays with Slurm
+*****
+
+Submitting batch arrays is a powerful way to automate running large numbers of similar jobs. Batch arrays are a set of jobs with identical code and parameters, but different input files. Each job in the array is identified by a unique index that is passed as an argument to the job script.
+
+In this guide, we will discuss how to submit batch arrays to Slurm.
+
+*Prerequisites*
+
+Before we start, you should have a basic understanding of how to submit jobs to Slurm using sbatch, as well as the syntax for writing job scripts. You should also have a set of input files that you want to process in a batch array.
+
+Step 1: Create a Job Script
+*****
+
+The first step is to create a job script that will run a single job in the batch array. The script should use the SLURM_ARRAY_TASK_ID environment variable to identify which input file to process.
+
+Here is an example job script for processing input files using the Python script "process.py":
+
+.. code-block:: bash
+
+    #!/bin/bash
+    #SBATCH --job-name=myjob
+    #SBATCH --output=myjob.%A.%a.out
+    #SBATCH --error=myjob.%A.%a.err
+    #SBATCH --array=1-10:4
+    #SBATCH --time=00:10:00
+    #SBATCH --ntasks=1
+    #SBATCH --cpus-per-task=1
+    #SBATCH --mem-per-cpu=10
+
+    echo "Processing input file input_${SLURM_ARRAY_TASK_ID}.txt"
+    python process.py input_${SLURM_ARRAY_TASK_ID}.txt
+
+Let's break down the SLURM directives used in this script:
+
+- `--job-name`: A descriptive name for the job.
+- `--output`: The name of the file where Slurm will write the standard output of the job.
+- `--error`: The name of the file where Slurm will write the standard error of the job.
+- `--array`: A range of indices for the batch array. In this example, we are submitting a batch array with indices 1-10, with a maximum of 4 jobs running in parallel
+- `--time`: The maximum amount of time that the job can run. In this example, the job can run for up to 10 minutes.
+- `--mem-per-cpu`: The amount of memory allocated per CPU for the job.
+
+Note that the input file is specified using the SLURM_ARRAY_TASK_ID environment variable, which takes on the values specified in the --array option. In this example, the input files are named input_1.txt, input_2.txt, ..., input_10.txt.
+
+Step 2: Submit the Batch Array
+*****
+To submit the batch array, use the sbatch command with the job script:
+
+.. code-block:: bash
+
+    $ sbatch myjob.sh
+
+This will submit the batch array to Slurm. You can use the squeue command to check the status of the jobs:
+
+.. code-block:: bash
+
+    $ squeue -u username
+
+Step 3: Monitor the Progress of the Batch Array
+*****
+
+You can monitor the progress of the batch array using the sacct command:
+
+.. code-block:: bash
+
+    $ sacct -j <jobid> --format=JobID,JobName,Partition,AllocCPUs,State,ExitCode,Elapsed
+
+This command will show you the status of each job in the batch array, including its state and exit code.
+
+Step 4: Post-processing
+*****
+
+After the batch array has finished running, you may want to process the output files. In our example, the output of each job is written to a separate file with a unique name
+
+Batch arrays are a powerful tool for managing and executing large numbers of similar jobs. With Slurm and Mjolnir, you can easily submit and manage batch arrays to speed up your workflow and increase efficiency.
+
