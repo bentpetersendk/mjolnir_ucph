@@ -9,60 +9,69 @@ Both GPU and CPU machines are included in this queue, as the GPU machines also h
 
 When scheduling a job, take the architecture of the machines into consideration. For more information on Hardware setup, please see the :doc:`hardware` document.
 
-A more elaborate guide to submitting jobs will come soon.
-
-
-Submitting Jobs to SLURM with sbatch (Quick Guide)
+Submitting Jobs to Mjolnir using sbatch
 ====
 
-SLURM is a job scheduler used on the Mjolnir HPC cluster. `sbatch` is a command-line tool for submitting jobs to SLURM. In this guide, we'll go through the steps for submitting a basic job using `sbatch`.
+Mjolnir is a high-performance computing cluster that uses the SLURM scheduler to manage resources and jobs. To submit jobs to Mjolnir, you can use the `sbatch` command. This guide provides an advanced overview of how to submit jobs to Mjolnir using `sbatch`.
 
-Step 1: Create a Job Script
+Step 1: Prepare your Script
 ---------------------------
 
-The first step in submitting a job to SLURM is to create a job script. The job script is a shell script that specifies the commands and options for your job. Here is an example job script:
+Before submitting a job to Mjolnir, you need to write a script that specifies the commands you want to run on the cluster. This script should be a plain text file containing a list of commands to be executed.
+
+Here is an example script:
 
 .. code-block:: bash
 
-    #!/bin/bash
-    #SBATCH --job-name=myjob
-    #SBATCH --output=myjob.out
-    #SBATCH --error=myjob.err
-    #SBATCH --partition=cpuqueue
-    #SBATCH --nodes=1
-    #SBATCH --ntasks-per-node=1
+   #!/bin/bash
+   #SBATCH --job-name=myjob
+   #SBATCH --output=myjob.out
+   #SBATCH --error=myjob.err
+   #SBATCH --ntasks=1
+   #SBATCH --cpus-per-task=4
+   #SBATCH --time=01:00:00
 
-    echo "Hello, world!"
+   echo "Hello world!"
 
-In this example, the job script specifies a job name, output and error files, the partition to use, the number of nodes, and the number of tasks per node. The last line simply prints "Hello, world!" to the console.
+The first line of the script (`#!/bin/bash`) tells the system that this is a bash script. The remaining lines starting with `#SBATCH` are directives for `sbatch` that specify various options for the job. For example, the `--job-name` option specifies the name of the job, the `--output` option specifies the file where stdout files should be written, and the `--time` option specifies the maximum time that the job is allowed to run. See the `sbatch` man page for a complete list of options.
 
-Step 2: Submit the Job
------------------------
+Step 2: Submit your Job
+------------------------
 
-Once you have a job script, you can submit it to SLURM using the `sbatch` command. Here is the command to submit the example job script:
+Once you have a job script, you can submit it to SLURM using the `sbatch` command. To submit your job to Mjolnir, use the `sbatch` command followed by the name of your script:
 
 .. code-block:: console
 
-    $ sbatch myjob.sh
+    $ sbatch myscript.sh
 
 This will submit the job to the default queue with the default settings. You can also specify options on the command line to override the options in the job script. For example:
 
 .. code-block:: console
 
-    $ sbatch --partition=gpuqueue --gres=gpu:1 myjob.sh
+    $ sbatch --partition=gpuqueue --gres=gpu:1 myscript.sh
 
 This will submit the job to the `gpuqueue` queue and request one GPU resource.
 
-Step 3: Monitor the Job
-------------------------
+In both cases you will receive a job ID as output. 
 
 After you submit a job, you can monitor its status using the `squeue` command. This command shows a list of all jobs currently running on the cluster. Here is an example of how to use `squeue` to check the status of your job:
 
-.. code-block:: console
+.. code-block:: bash
 
-    $ squeue -u yourusername
+   $ squeue -u your_username
 
 This will show a list of all jobs submitted by `yourusername`. The output includes information such as the job ID, the job name, the partition, the status, and the time the job has been running.
+
+Step 3: Monitor your Job
+------------------------
+
+While your job is running, you can monitor its progress using the `squeue` command:
+
+.. code-block:: bash
+
+   $ squeue -j job_id
+
+This will show you the status of your job, including its current state, the amount of time it has been running, and the amount of resources it is currently using.
 
 Step 4: View Job Output
 ------------------------
@@ -78,4 +87,5 @@ This will show the contents of the `myjob.out` file on the console.
 Conclusion
 ----------
 
-In this guide, we've gone through the basic steps for submitting a job to SLURM using `sbatch`. For more information on `sbatch` and other SLURM commands, please see the official SLURM documentation.
+By following the steps outlined in this guide, you should be able to submit jobs to Mjolnir using `sbatch`. Remember to consult the `sbatch` man page for a complete list of options and to monitor your jobs using `squeue`. For more information on `sbatch` and other SLURM commands, please see the official SLURM documentation.
+
