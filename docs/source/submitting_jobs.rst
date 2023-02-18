@@ -5,9 +5,8 @@ The queueing system SLURM is installed with two queues:
 - `gpuqueue` for requesting a GPU
 - `cpuqueue` (default) for requesting a CPU.
 
-Both GPU and CPU machines are included in this queue, as the GPU machines also have CPUs available. For more information on Hardware setup, please see the :doc:`hardware` document.
+Both GPU and CPU machines are included in this queue, as the GPU machines also have CPUs available. 
 
-
-When scheduling a job, take the architecture of the machines into consideration, as seen on the slide with Hardware Architecture.
+When scheduling a job, take the architecture of the machines into consideration. For more information on Hardware setup, please see the :doc:`hardware` document.
 
 A more elaborate guide to submitting jobs will come soon.
