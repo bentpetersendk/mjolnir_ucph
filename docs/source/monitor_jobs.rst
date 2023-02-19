@@ -35,7 +35,7 @@ You can also use various options to filter the output by time, job status, and o
 By using these commands, you can keep track of your jobs in SLURM and quickly identify any issues that may arise during the job's execution.
 
 
-Monitoring nodes: `sinfo
+Monitoring nodes
 *****
 
 The `sinfo` command is used to display information about nodes and partitions in the Slurm cluster.
@@ -60,29 +60,18 @@ To view information about a specific node, use the following command:
 
 This will display information about the specified node, including its state, partitions, and other information.
 
-:header-rows: 1
+Below is a list of the most common node-states that you will find. 
 
-* - State
-  - Description
-* - DOWN*
-  - Node is not responding, possibly due to hardware or network issues.
-* - DRAINED*
-  - Node is not available for running jobs, possibly due to maintenance, hardware issues, or administrative reasons.
-* - FAIL*
-  - Job or resource request failed to run on the node due to an error.
-* - MAINT*
-  - Node is not available for running jobs, possibly due to scheduled maintenance or administrative reasons.
-* - MIXED
-  - Node has resources of varying capacity or quality, making it unsuitable for scheduling homogeneous jobs.
-* - RESUME*
-  - Node was previously DRAINED and is now available for running jobs.
-* - UNKNOWN*
-  - Node state is currently unknown.
-* - UP
-  - Node is available for running jobs.
-
-
-
+- **alloc**: The node has been allocated to one or more jobs
+- **comp**: All jobs associated with this node are in the process of COMPLETING
+- **drain**: The node is currently executing a job, but will not be allocated additional jobs.
+- **drained**: The node is unavailable for use per system administrator request.
+- **down**: The node is unavailable for use.
+- **idle**: The node is not allocated to any jobs and is available for use..
+- **maint**: The node is currently in a reservation with a flag value of "maintenance".
+- **mix**: The node has some of its CPUs ALLOCATED while others are IDLE.
+- **planned**: The node is planned by the backfill scheduler for a higher priority job.
+- **resv**: The node is in an advanced reservation for future use and not generally available.
 
 You can use the `--format` option to customize the output of the `sinfo` command.
 
