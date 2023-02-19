@@ -35,7 +35,7 @@ You can also use various options to filter the output by time, job status, and o
 By using these commands, you can keep track of your jobs in SLURM and quickly identify any issues that may arise during the job's execution.
 
 
-Monitoring nodes with `sinfo
+Monitoring nodes: `sinfo
 *****
 
 The `sinfo` command is used to display information about nodes and partitions in the Slurm cluster.
@@ -59,6 +59,30 @@ To view information about a specific node, use the following command:
    $ sinfo -N <node_name>
 
 This will display information about the specified node, including its state, partitions, and other information.
+
+:header-rows: 1
+
+* - State
+  - Description
+* - DOWN*
+  - Node is not responding, possibly due to hardware or network issues.
+* - DRAINED*
+  - Node is not available for running jobs, possibly due to maintenance, hardware issues, or administrative reasons.
+* - FAIL*
+  - Job or resource request failed to run on the node due to an error.
+* - MAINT*
+  - Node is not available for running jobs, possibly due to scheduled maintenance or administrative reasons.
+* - MIXED
+  - Node has resources of varying capacity or quality, making it unsuitable for scheduling homogeneous jobs.
+* - RESUME*
+  - Node was previously DRAINED and is now available for running jobs.
+* - UNKNOWN*
+  - Node state is currently unknown.
+* - UP
+  - Node is available for running jobs.
+
+
+
 
 You can use the `--format` option to customize the output of the `sinfo` command.
 
