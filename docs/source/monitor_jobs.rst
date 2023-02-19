@@ -12,7 +12,7 @@ The `squeue` command lists all of the current jobs in the SLURM queue, including
 
     $ squeue -u yourusername
     
-When you list your jobs, you will find that each job has a state. Some of the poossible states are listed below:
+When you list your jobs, you will find that each job has a state. Some of the poossible states are listed below with their explanation:
 
 - **PD**: Pending - Job is awaiting resource allocation.
 - **R**: Running - Job currently has an allocation.
