@@ -1,4 +1,4 @@
-Canceling Jobs using `scancel`
+Canceling Jobs
 *****
 
 Sometimes, you may need to cancel a job that you previously submitted to the SLURM queue. SLURM provides the `scancel` command for this purpose.
