@@ -11,6 +11,20 @@ The `squeue` command lists all of the current jobs in the SLURM queue, including
 .. code-block:: console
 
     $ squeue -u yourusername
+    
+When you list your jobs, you will find that each job has a state. Some of the poossible states are listed below:
+
+- **PD**: Pending - Job is awaiting resource allocation.
+- **R**: Running - Job currently has an allocation.
+- **CG**: Completing - Job is completing (cleaning up after itself).
+- **CD**: Completed - Job has terminated all processes.
+- **CA**: Cancelled - Job was explicitly cancelled by the user or system administrator.
+- **F**: Failed - Job terminated with non-zero exit code or other failure condition.
+- **TO**: Timeout - Job terminated upon reaching its time limit.
+- **NF**: Node Failure - Job terminated due to a failure of one or more nodes.
+- **RV**: Revoked - Job was preempted by another job or manually killed by a privileged user.
+- **PR**: Preempted - Job was preempted by a higher priority job.
+- **SE**: Suspended - Job has been suspended by the user or system administrator.
 
 Detailed job information: `scontrol`
 --------
