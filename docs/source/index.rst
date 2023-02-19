@@ -27,6 +27,7 @@ Contents
    backup
    disruptions
    submitting_jobs
+   monitor_jobs
    software
    newsoftware
    newuser
