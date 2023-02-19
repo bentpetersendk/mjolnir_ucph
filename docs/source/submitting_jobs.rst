@@ -287,33 +287,3 @@ Conclusion
 
 The `scancel` command provides a simple and powerful way to cancel jobs in the SLURM queue. By using the options described in this guide, you can cancel specific jobs, job arrays, or all jobs submitted by a specific user or running on a specific partition or node.
 
-
-Monitoring nodes with `sinfo
-*****
-
-The `sinfo` command is used to display information about nodes and partitions in the Slurm cluster.
-
-To view all nodes in the cluster, use the following command:
-
-.. code-block:: console
-
-   $ sinfo
-
-This will display a list of all nodes, their state, partition, and other information. You can use the `-p` option to filter by partition, like this:
-
-.. code-block:: console
-
-   $ sinfo -p <partition_name>
-
-To view information about a specific node, use the following command:
-
-.. code-block:: console
-
-   $ sinfo -N <node_name>
-
-This will display information about the specified node, including its state, partitions, and other information.
-
-You can use the `--format` option to customize the output of the `sinfo` command.
-
-For more information about the `sinfo` command and its options, see the Slurm documentation or type `man sinfo` in the console.
-
