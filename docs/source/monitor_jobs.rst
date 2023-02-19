@@ -3,7 +3,7 @@ Monitoring Jobs
 
 After submitting a job to SLURM, it's important to monitor its status to check if it's running, has finished, or has encountered any errors. Here are some useful commands for monitoring SLURM jobs:
 
-squeue
+List jobs in the queue: `squeue`
 -------
 
 The `squeue` command lists all of the current jobs in the SLURM queue, including their job ID, status, and other information. Running `squeue` with no arguments will show all jobs in the queue, but you can also filter the output to show only your own jobs, for example, with the `-u` flag followed by your username:
@@ -12,7 +12,7 @@ The `squeue` command lists all of the current jobs in the SLURM queue, including
 
     $ squeue -u yourusername
 
-scontrol
+Detailed job information: `scontrol`
 --------
 
 The `scontrol` command provides more detailed information about a specific job, such as its status, start and end times, and resources used. You can use `scontrol` to check the status of a job by specifying its job ID:
@@ -21,7 +21,7 @@ The `scontrol` command provides more detailed information about a specific job, 
 
     $ scontrol show job jobID
 
-sacct
+Summary of completed jobs: `sacct`
 -----
 
 The `sacct` command provides a summary of all completed jobs, including their start and end times, exit code, and other information. To view information about your own jobs, you can use the `--user` flag followed by your username:
