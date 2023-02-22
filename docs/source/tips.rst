@@ -35,6 +35,6 @@ Discord server
 =====
 Join our Discord server to get help from other users and search past messages.
 
-You can join at: https://discord.gg/Qe3UaS5AZr
+The address for the discord server has been sent in your welcome email. 
 
 When you join the Mjolnir Discord channel, it is important that you change your nickname to "Full name - KU-ID" and upload a photo of yourself. Users with no real name and KU-ID will be removed.
