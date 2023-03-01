@@ -58,7 +58,7 @@ If you book more resources than you use, then you will limit your colleagues to 
      - 512gb
      - cpuqueue
    * - mjolnircomp07fl
-     - **Ordered**, will be delivered spring 2023
+     - **Delivered**, awaiting installation of Power cables in datacenter
      - 64 tasks
      - N/A
      - 1024gb
