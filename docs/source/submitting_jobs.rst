@@ -153,7 +153,7 @@ Before we start, you should have a basic understanding of how to submit jobs to 
 Step 1: Create a Job Script
 ---------------------------
 
-The first step is to create a job script that will run a single job in the batch array. All of the parameters (--cpus-per-task, --mem-per-cpu, --time etc) will be set for every individual job running in the batch array. The script should use the SLURM_ARRAY_TASK_ID environment variable to identify which input file to process.
+The first step is to create a job script that will run a single job in the batch array. All of the parameters (--cpus-per-task, --mem-per-cpu, --time, etc) will be set for every individual job running in the batch array. The script should use the SLURM_ARRAY_TASK_ID environment variable to identify which input file to process.
 
 Here is an example job script for processing input files using the Python script "process.py":
 
