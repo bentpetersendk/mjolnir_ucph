@@ -163,7 +163,7 @@ Here is an example job script for processing input files using the Python script
     #SBATCH --job-name=myjob
     #SBATCH --output=myjob.%A.%a.out
     #SBATCH --error=myjob.%A.%a.err
-    #SBATCH --array=1-10:4
+    #SBATCH --array=1-10%4
     #SBATCH --time=00:10:00
     #SBATCH --ntasks=1
     #SBATCH --cpus-per-task=1
