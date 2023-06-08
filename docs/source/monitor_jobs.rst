@@ -48,6 +48,36 @@ You can also use various options to filter the output by time, job status, and o
 
 By using these commands, you can keep track of your jobs in SLURM and quickly identify any issues that may arise during the job's execution.
 
+Summary of completed jobs: `sacct` - advanced
+-----
+The `sacct` command can be used in a more advanced manner, which can help you optimize your resource booking.
+By using the following command, you can obtain a summary of your jobs for the past week:
+(Replace "jsd606" with your own ku-id or replace "-u jsd606” with “--allusers”)
+
+.. code-block:: console
+
+    $ sacct -u jsd606 --units=G --format "JobID%20,JobName,Partition,NodeList,Elapsed,CPUTime,ReqMem,MaxRSS,State%15, AllocTRES%32_" --starttime=$(date -d "1 week ago" +%Y-%m-%d)
+
+.. image:: sacct.png
+   :alt: Output from Sacct 
+   :align: center
+
+
+**MaxRSS** reflects the highest amount of memory the job occupied in the main memory of the system
+
+**Elapsed** refers to the elapsed time or duration of a job's execution. It represents the total amount of time that a job has been running, from its start to its completion or termination.
+
+C**PUTime** refers to the total CPU time consumed by a job during its execution. It represents the amount of time that the job's processes spent actively using the CPU(s).
+
+**AllocTRES** refers to the allocated resources for a job in SLURM => It is the resources you have booked.
+
+Looking at the job status, it is evident that job **1439676** terminated with an “OUT_OF_MEMORY" error. This indicates a requirement for more memory than the currently booked 12GB. As the job was killed due to out-of-memory conditions, it is expected that the MaxRSS field may not be available or accurately reflect the job's memory usage, hence the 0.00G in MaxRSS.
+
+On the other hand, job **1439654** utilized a maximum of 19.70GB, which is considerably less than the allocated 250GB. This signifies a substantial overbooking of resources, and the job could be successfully executed with lower resource allocation.
+
+By comparing AllocTRES with MaxRSS and Elapsed/CPUTime, you can thereby optimize your job bookings more effectively for future jobs.
+
+When CPUTime closely matches Elapsed and multiple CPUs have been reserved, it indicates that a significant portion of your computation did not involve multithreading. In such cases, it is advisable to reduce the number of CPUs booked.
 
 Monitoring nodes
 *****
