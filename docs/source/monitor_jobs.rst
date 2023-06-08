@@ -53,7 +53,7 @@ Summary of completed jobs: `sacct` - advanced
 The `sacct` command can be used in a more advanced manner, which can help you optimize your resource booking.
 By using the following command, you can obtain a summary of your jobs for the past week:
 
-(Replace "jsd606" with your own ku-id or replace "-u jsd606” with “--allusers”)
+(Replace "jsd606" with your own ku-id or replace "-u jsd606” with “- -allusers”)
 
 .. code-block:: console
 
