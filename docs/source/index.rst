@@ -30,6 +30,7 @@ Contents
    cancel_jobs
    monitor_jobs
    software
+   software_email_digest
    newsoftware
    newuser
    tips
