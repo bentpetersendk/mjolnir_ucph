@@ -4,10 +4,10 @@
 
 project = 'Mjolnir-ucph'
 copyright = '2022, Bent Petersen'
-author = 'Bent Petersen'
+author = 'Bent Petersen, Senior Researcher, Mjolnir administrator'
 
 release = '0.1'
-version = '0.1.0'
+version = '0.2.0'
 
 # -- General configuration
 
