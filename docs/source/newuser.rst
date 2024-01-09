@@ -6,4 +6,4 @@ Please note that the information you fill in will be verified with the PI before
 
 .. raw:: html
 
-       <iframe class="airtable-embed" src="https://airtable.com/embed/app0YI6HJDQGmtIru/shrHAbnVlpQY07Yyf?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+       <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/app0YI6HJDQGmtIru/shrHAbnVlpQY07Yyf?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="1867" style="background: transparent; border: 1px solid #ccc;"></iframe>
