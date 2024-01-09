@@ -1,7 +1,7 @@
 Add/change primary email and change communication preference
 =====
 
-This form is a request for adding a secondary email and selecting your preferred mode of communication.
+This form is a request for adding a secondary email and selecting your preferred mode of communication. You can use this form continuously to update your preferences should you change email address.
 
 .. raw:: html
 
