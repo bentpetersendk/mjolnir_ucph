@@ -1,4 +1,5 @@
-Add/change primary email and change communication preference=====
+Add/change primary email and change communication preference
+=====
 
 This form is a request for adding a secondary email and selecting your preferred mode of communication.
 
