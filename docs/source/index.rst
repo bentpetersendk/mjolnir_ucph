@@ -33,4 +33,5 @@ Contents
    software_email_digest
    newsoftware
    newuser
+   create add_change_primary_email
    tips
