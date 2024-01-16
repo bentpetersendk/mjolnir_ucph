@@ -2,7 +2,7 @@ Software installation digest email
 =====
 
 Every 2 weeks we send a list of all software that has been installed at the system. 
-If you want to subscribe, or unsubscribe, please fill in the form below.
+If you want to subscribe, or unsubscribe, please fill in the form below. It may take a few seconds to load the form, so please be patient.
 
 .. raw:: html
 
