@@ -1,13 +1,4 @@
 Databases
 =====
 
-Databases can be stored in a common folder for access to everyone.
-
-    .. code-block:: console
-
-        /projects/mjolnir1/data/databases
-
-This is where commonly used databases will be stored. Contact Bent for storing of databases. The folder is not user-maintained. 
-
-
-... A list of databases will be added later !
+This is outdated. go to https://mjolnirucph-help.freshdesk.com/support/home for up to date information
