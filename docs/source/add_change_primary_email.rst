@@ -1,8 +1,4 @@
 Add/change primary email and change communication preference
 =====
 
-This form is a request for adding a secondary email and selecting your preferred mode of communication. You can use this form continuously to update your preferences should you change email address.
-
-.. raw:: html
-
-       <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/app0YI6HJDQGmtIru/shrLWy1CMciu0yC3k?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+This is outdated. go to https://mjolnirucph-help.freshdesk.com/support/home for up to date information
