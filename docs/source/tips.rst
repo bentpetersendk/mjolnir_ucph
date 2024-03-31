@@ -33,8 +33,6 @@ If you don't have specific needs concerning Python environments, our default ``p
 
 Discord server
 =====
-Join our Discord server to get help from other users and search past messages.
 
-The address for the discord server has been sent in your welcome email. 
+This is outdated. go to https://mjolnirucph-help.freshdesk.com/support/home for up to date information
 
-When you join the Mjolnir Discord channel, it is important that you change your nickname to "Full name - KU-ID" and upload a photo of yourself. Users with no real name and KU-ID will be removed.
